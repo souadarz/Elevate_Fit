@@ -122,30 +122,33 @@ p{
     height: 24%;
     width: 33%;
     position: absolute;
-    background-position: center;
-    background-color: #000;
-    border: #e02b13;
-    border-radius: 50%;
-    display: flex;
+    z-index: 1000px;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
+    display: none;
     cursor: pointer;
-    transition: 0.3s;
-    /* display: none; */
 }
-/* .panier:hover .ajouter_panier {
-    display: block;
+.ajouter_panier.active{
+    background-position: center;
+    background-color: #000;
+    border: #e02b13; 
+    border-radius: 50%;
 }
-.panier:hover .image{
-    opacity: 0.5;
-} */
+
 .panier{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* the style of page cart.html*/
+.container_cart hr{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff523b ;
 
+}
 
 /*for title class consist of heading of feature products*/
 .title{
